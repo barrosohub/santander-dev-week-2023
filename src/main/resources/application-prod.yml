@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${SUPABASE_PG_HOST}:${SUPABASE_PG_PORT}/${SUPABASE_PG_DATABASE}
+    username: ${SUPABASE_PG_USER}
+    password: ${SUPABASE_PG_PASS}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
